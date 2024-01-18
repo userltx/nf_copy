@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="start_page">
+        <div class="page_bg">
+    <header class="header_nf">
+        <div class="wrapper" id = "wrapper_head">
+            <div class="header_flex">
+        <div class="header_logo">
+            <img src="/img/nf_logo.png" alt="logo" class="logo_img">
+        </div>
+        <div class="header_text">
+            <div class="header_lang">
+                <div class="lang">
+                    <img src="/img/lang-icon.png" alt="lang-translate" id = "icon-lang-header" class="icon_lang">
+                    <p class="lang-chose" id = "lang-chose-header">English</p>
+                    <div class="lang-angle"></div>
+                </div>
+                <button onclick = "lang_en" class = "button-lang">English</button>
+                <button onclick = "lang_es" class = "button-lang">Español</button>
+            </div>
+            <button class="sign">Sign In</button>
+        </div>
+    </div>
+    </div>
+    </header>
+    <div class="start_title">
+        <p class="start_title_text">
+            Unlimited movies, TV shows, and more
+        </p>
+    </div>
+    <div class="start_subtitle">
+        <p class="start_subtitle_text" id ="subtitle_one">Watch Anywhere. Cancel anytime.</p>
+        <p class="start_subtitle_text" id = "subtitle_two">Ready to watch? Enter your email to create or restart your membership.</p>
+    </div>
+    <div class="wrapper" id = "mail_wrapper">
+    <div class="start_mail">
+        <div class="mail-div">
+    <input type="mail" class="start_mail_input">
+    <label class="mail_text">Email address</label>
+</div>
+    <button type = "submit" class="start_mail_button"><p class="start_mail_button_text">Get Started</p><div class="button_angle"></div></button>
+</div>
+</div>
+</div>
+</div>
+<div class="ad_section">
+    <div class="ad_wrapper">
+<div class="ad_banner">
+    <div class="ad_logo">
+        <img src="/img/ad_popcorn.png" alt="pop" class="ad_logo_img">
+    </div>
+    <div class="ad_text">
+        <div class="ad_title">
+            <p class="ad_title_text">
+                The Netflix you love for just $6.99.
+            </p>
+        </div>
+        <div class="ad_subtitle">
+            <p class="ad_subtitle_text">
+                Get the Standart with ads plan.
+            </p>
+        </div>
+        <a href="#" class="ad_href">Learn More <div class="button_angle_ad"></div></a>
+    </div>
+</div>
+</div>
+</div>
+<!-- <div class="ad_spacer"></div>
+<div class="tv_spacer"></div> -->
+<div class="tv">
+    <div class="wrapper">
+        <div class="tv_grid">
+            <div class="tv_grid_text">
+                <div class="tv_grid_text_title">
+                    <p class="tv_grid_text_title_text">
+                        Enjoy on your TV
+                    </p>
+                </div>
+                <div class="tv_grid_text_subtitle">
+                    <p class="tv_grid_text_subtitle_text">
+                        Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players and more.
+                    </p>
+                </div>
+            </div>
+            <div class="tv_grid_picture">
+                <div class="tv_grid_picture_img" id = "tv_grid_pictute_img_first">
+                    <img src="/img/tv.png" alt="tvPic" id = "tvPics" class="Grid_png">
+                    <div class="tv-gif-div">
+                        <img src="/img/tv-gif.gif" alt="tv-anim" class="tv-gif">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="grey_lines"></div>
+    <div class="wrapper">
+        <div class="tv_grid">
+            <div class="tv_grid_text" id = "tv_grid_text_two">
+                <div class="tv_grid_text_title">
+                    <p class="tv_grid_text_title_text">
+                        Watch everywhere
+                    </p>
+                </div>
+                <div class="tv_grid_text_subtitle">
+                    <p class="tv_grid_text_subtitle_text">
+                        Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.
+                    </p>
+                </div>
+            </div>
+            <div class="tv_grid_picture">
+                <div class="tv_grid_picture_img" id = "tv_grid_picture_img_two">
+                    <img src="/img/devices.png" alt="devicePic" id = "devicePics"class="Grid_png">
+                    <div class="sl-div">
+                        <img src="/img/so-ad.jpg" alt="shameless" class="sl-pic">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="grey_lines"></div>
+    <div class="wrapper">
+        <div class="tv_grid">
+            <div class="tv_grid_text" id = "tv_grid_text_three">
+                <div class="tv_grid_text_title">
+                    <p class="tv_grid_text_title_text">
+                        Create profiles for kids
+                    </p>
+                </div>
+                <div class="tv_grid_text_subtitle">
+                    <p class="tv_grid_text_subtitle_text">
+                        Send kids on adventures with their favourite characters in a space made just for them-free with your membership.
+                    </p>
+                </div>
+            </div>
+            <div class="tv_grid_picture">
+                <div class="tv_grid_picture_img">
+                    <img src="/img/kids.png" alt="kidsPic" class="Grid_png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="grey_lines"></div>
+    <div class="wrapper">
+        <div class="tv_grid">
+            <div class="tv_grid_text" id = "tv_grid_text_four">
+                <div class="tv_grid_text_title">
+                    <p class="tv_grid_text_title_text">
+                        Download your shows to watch offline
+                    </p>
+                </div>
+                <div class="tv_grid_text_subtitle">
+                    <p class="tv_grid_text_subtitle_text">
+                        Watch on a plane, train, or submarine...
+                    </p>
+                </div>
+            </div>
+            <div class="tv_grid_picture">
+                <div class="tv_grid_picture_img">
+                    <img src="/img/everywhere.jpg" alt="ewPic" class="Grid_png">
+                    <div class="img_activity">
+                        <div class="img_activity_left">
+                            <img src="/img/st-th.png" alt="st-th" class="img-st-th">
+                            <div class="text_activity_left_text">
+                            <p class="left_title">Stranger Things</p>
+                            <p class="left_subtitle">Downloading...</p>
+                        </div>
+                        </div>
+                        <div class="img_activity_right">
+                            <img src="/img/download-icon.gif" alt="gif" class="right_gif">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="grey_lines" id = "unquestions"></div>
+    <div class="questions_section">
+        <div class="wrapper">
+            <div class="question_title">
+                <p class="question_title_text">
+                    Frequently Asked Questions
+                </p>
+            </div>
+            <div class="questions_button">
+                <div class="question_button">
+                    <div class="question_button_text">
+                        <p class="question_button_text___">
+                            What is Netflix?
+                        </p>
+                    </div>
+                    <div class="question_button_right">
+                        <span class="line_qu_one"></span>
+                        <span class="line_qu_two"></span>
+                    </div>
+                </div>
+                <div class="question_button">
+                    <div class="question_button_text">
+                        <p class="question_button_text___">
+                            How much does Netflix cost?
+                        </p>
+                    </div>
+                    <div class="question_button_right">
+                        <span class="line_qu_one"></span>
+                        <span class="line_qu_two"></span>
+                    </div>
+                </div>
+                <div class="question_button">
+                    <div class="question_button_text">
+                        <p class="question_button_text___">
+                            Where can I watch?
+                        </p>
+                    </div>
+                    <div class="question_button_right">
+                        <span class="line_qu_one"></span>
+                        <span class="line_qu_two"></span>
+                    </div>
+                </div>
+                <div class="question_button">
+                    <div class="question_button_text">
+                        <p class="question_button_text___">
+                            How do I cancel?
+                        </p>
+                    </div>
+                    <div class="question_button_right">
+                        <span class="line_qu_one"></span>
+                        <span class="line_qu_two"></span>
+                    </div>
+                </div>
+                <div class="question_button">
+                    <div class="question_button_text">
+                        <p class="question_button_text___">
+                            What can I watch on Netflix?
+                        </p>
+                    </div>
+                    <div class="question_button_right">
+                        <span class="line_qu_one"></span>
+                        <span class="line_qu_two"></span>
+                    </div>
+                </div>
+                <div class="question_button">
+                    <div class="question_button_text">
+                        <p class="question_button_text___">
+                            Is Netflix good for kids?
+                        </p>
+                    </div>
+                    <div class="question_button_right">
+                        <span class="line_qu_one"></span>
+                        <span class="line_qu_two"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="start_subtitle">
+                <p class="start_subtitle_text" id = "subtitle_two">Ready to watch? Enter your email to create or restart your membership.</p>
+            </div>
+            <div class="start_mail" id = "mail_onFoot">
+                <div class="mail-div">
+            <input type="mail" class="start_mail_input">
+            <label class="mail_text">Email address</label>
+        </div>
+            <button type = "submit" class="start_mail_button">Get Started <div class="button_angle"></div></button>
+        </div>
+        </div>
+    </div>
+    <div class="grey_lines" id = "unfooter"></div>
+    <footer class="footer_nf">
+        <div class="wrapper">
+        <div class="footer_call">
+            <p class="call_text">Questions? Call <a href="#" class="call_number">1-844-505-2993</a></p>
+        </div>
+        <div class="footer_menu">
+            <div class="menu_column">
+                <a href="#" class="menu_column_text">FAQ</a>
+                <a href="#" class="menu_column_text">Investor Relations</a>
+                <a href="#" class="menu_column_text">Buy Gift Cards</a>
+                <a href="#" class="menu_column_text">Cookie Preferences</a>
+                <a href="#" class="menu_column_text">Legal Notices</a>
+            </div>
+            <div class="menu_column">
+                <a href="#" class="menu_column_text">Help Center</a>
+                <a href="#" class="menu_column_text">Jobs</a>
+                <a href="#" class="menu_column_text">Ways to Watch</a>
+                <a href="#" class="menu_column_text">Corporate Information</a>
+                <a href="#" class="menu_column_text">Only on Netflix</a>
+            </div>
+            <div class="menu_column">
+                <a href="#" class="menu_column_text">Account</a>
+                <a href="#" class="menu_column_text">Netflix Shop</a>
+                <a href="#" class="menu_column_text">Terms of Use</a>
+                <a href="#" class="menu_column_text">Contact Us</a>
+                <a href="#" class="menu_column_text">Do Not Sell of Share My Personal Information</a>
+            </div>
+            <div class="menu_column">
+                <a href="#" class="menu_column_text">Media Center</a>
+                <a href="#" class="menu_column_text">Redeem Gift Cards</a>
+                <a href="#" class="menu_column_text">Privacy</a>
+                <a href="#" class="menu_column_text">Speed Test</a>
+                <a href="#" class="menu_column_text">Ad Choices</a>
+            </div>
+        </div>
+        <div class="lang" id = "lang_footer">
+            <img src="/img/lang-icon.png" alt="lang-translate" class="icon_lang">
+            <p class="lang-chose">English</p>
+            <div class="lang-angle"></div>
+        </div>
+    </div>
+    </footer>
+</div>
+</div>
+</body>
+</html>
