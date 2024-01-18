@@ -429,7 +429,7 @@
     z-index: 10;
   }
   .start_page {
-    background: url(img/netflix_bg.jpg) center no-repeat;
+    background: url(./img/netflix_bg.jpg) center no-repeat;
     background-size: cover;
   }
   .start_title_text {
