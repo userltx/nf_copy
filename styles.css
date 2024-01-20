@@ -555,7 +555,7 @@ html {
   border-radius: 3px;
   border-color: transparent rgb(229,9,20) transparent transparent;
 }
-.ad_banner {
+.da_banner {
   position: relative;
   z-index: 99;
   transform: translateY(-50%);
@@ -568,38 +568,39 @@ html {
   background: radial-gradient( 51.39% 511.66% at 47.68% -217.91%, #ff9900 0%, #e50914 17.27%, #0e1b4f 79.44%, #000413 100% );
   box-shadow: 0px -16px 20px 5px rgba(0, 0, 0, 0.5);
 }
-.ad_logo_img {
+.da_logo_img {
   margin-top: 20px;
   max-width: 90px;
   padding-right: 20px;
   filter:drop-shadow(0px -5px 10px rgba(255, 255, 255, 0.6));
 }
-.ad_wrapper {
+#da_wrapper {
   display: block;
+  max-width: none;
 }
-.ad_title {
+.da_title {
   margin-top: 10px;
   margin-bottom: 12px;
 }
-.ad_subtitle {
+.da_subtitle {
   margin-top: 0px;
   margin-bottom: 15px;
 }
-.ad_title_text {
+.da_title_text {
   font-size: 20px;
   font-weight: bold;
   margin: 0;
   color: white;
 }
-.ad_subtitle_text {
+.da_subtitle_text {
   font-size: 16px;
   margin: 0;
   color: white;
 }
-.ad_href {
+.da_href {
   color: rgb(68,142,244);
 }
-.ad_section {
+.da_section {
   background-color: black;
   max-height: 70px;
 }
@@ -804,7 +805,7 @@ html {
     max-width: none;
     padding: 0px 40px 0px 40px;
   }
-  .ad_section {
+  .da_section {
     max-height: 60px;
   }
   .img_activity {
@@ -841,10 +842,10 @@ html {
   .start_page {
     background-size: cover;
   }
-  .ad_banner {
+  .da_banner {
     transform: none;
   }
-  .ad_section {
+  .da_section {
     max-height: 100%;
     padding-bottom: 100px;
   }
@@ -922,7 +923,7 @@ html {
   }
 }
 @media screen and (max-width: 655px){
-  .ad_banner {
+  .da_banner {
     position: relative;
     display: block;
     padding: 40px 30px 30px 30px;
@@ -933,14 +934,15 @@ html {
     padding: 0px 30px 0px 30px;
     line-height: 1.5;
   }
-  #ad_wrapper {
+  #da_wrapper {
+    display: block;
     padding: 0px 30px 0px 30px;
   }
-  .ad_logo {
+  .da_logo {
     position: absolute;
     top: -65px;
   }
-  .ad_logo_img {
+  .da_logo_img {
     max-width: 70px;
   }
 }
@@ -979,7 +981,7 @@ html {
   }
 }
 @media screen and (max-width: 598px) {
-  .ad_section {
+  .da_section {
     padding-top: 16px;
   }
 }
